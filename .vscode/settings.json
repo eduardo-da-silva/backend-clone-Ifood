@@ -1,0 +1,62 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintPath": "pylint",
+    "python.linting.pylintArgs": [
+        "--disable=C0111"
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/__pypackages__/3.11/lib"
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/__pypackages__/3.11/lib"
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.indexing": true,
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "django",
+            "includeAllSymbols": true,
+            "depth": 10
+        },
+        {
+            "name": "rest_framework",
+            "includeAllSymbols": true,
+            "depth": 10
+        }
+    ],
+    "peacock.remoteColor": "#25415d",
+    "python.testing.pytestArgs": [
+        "src",
+        "--ignore",
+        "__pypackages__",
+        "-s"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "workbench.colorCustomizations": {
+        "activityBar.activeBorder": "#441b30",
+        "activityBar.activeBackground": "#8dc993",
+        "activityBar.background": "#8dc993",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#7068b7",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#8dc993",
+        "statusBar.background": "#6bb872",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#4ea255",
+        "statusBarItem.remoteBackground": "#6bb872",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#6bb872",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#6bb87299",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#6bb872",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
+}
